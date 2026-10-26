@@ -317,7 +317,7 @@
       </header>
       <ol class="sv-list"></ol>`
     sv.querySelector('h1').textContent = document.querySelector('title').textContent.replace(/^발표 대본 · /, '')
-    sv.querySelector('.sv-meta').textContent = `진로 독서 탐구 · 구현민 · ${total}장 · 예상 ${clock(upTo(total - 1))} (생략 가능 문장은 뺀 시간이에요. 다 읽으면 5분이 넘어요)`
+    sv.querySelector('.sv-meta').textContent = `진로 독서 탐구 · 구현민 · ${total}장 · 예상 ${clock(upTo(total - 1))} (생략 가능 문장은 뺀 시간이에요)`
     sv.querySelector('.sv-head').after(document.getElementById('script-before').content.cloneNode(true))
     const list = sv.querySelector('.sv-list')
     slides.forEach((_, i) => {
