@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI가 다 한다면, 내 몫은 무엇일까</title>
-    <meta name="description" content="『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고 고교학점제 과목 선택 도우미 과목내비를 만든 진로 독서 탐구 발표" />
-    <meta property="og:title" content="AI가 다 한다면, 내 몫은 무엇일까" />
+    <title>AI 하나로 돈 버는 프로그램을 만들 수 있을까</title>
+    <meta name="description" content="『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고 또래를 위한 고교학점제 과목 선택 도우미 과목내비를 만든 진로 독서 탐구 발표" />
+    <meta property="og:title" content="AI 하나로 돈 버는 프로그램을 만들 수 있을까" />
     <meta property="og:description" content="『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고 과목내비를 만들기까지" />
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
@@ -20,11 +20,12 @@
         <span class="brand">과목<span class="brand-mark">내비</span></span>
         <nav class="nav" aria-label="발표 순서">
           <button type="button" class="nav-link" data-to="book">책</button>
-          <button type="button" class="nav-link" data-to="question">궁금증</button>
-          <button type="button" class="nav-link" data-to="method">탐구</button>
+          <button type="button" class="nav-link" data-to="problem">문제</button>
           <button type="button" class="nav-link" data-to="proposal">제안서</button>
+          <button type="button" class="nav-link" data-to="build">개발</button>
+          <button type="button" class="nav-link" data-to="test">AI 테스트</button>
+          <button type="button" class="nav-link" data-to="answer">결론</button>
           <button type="button" class="nav-link" data-to="demo">시연</button>
-          <button type="button" class="nav-link" data-to="end">마무리</button>
         </nav>
         <span class="top-meta">진로 독서 탐구 · 구현민</span>
       </header>
@@ -37,8 +38,8 @@
         <div class="cover">
           <div class="cover-copy rise">
             <p class="eyebrow">진로 독서 탐구 발표</p>
-            <h1>AI가 다 한다면,<br /><span class="mark">내 몫</span>은 무엇일까</h1>
-            <p class="lead">『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고<br />과목 선택 도우미 ‘과목내비’를 만들기까지</p>
+            <h1>AI 하나로<br /><span class="mark">돈 버는 프로그램</span>을<br />만들 수 있을까</h1>
+            <p class="lead">『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고<br />또래를 위한 과목 선택 도우미 ‘과목내비’를 만들기까지</p>
             <p class="byline"><strong>구현민</strong><span class="num">2026. 11. 9.</span></p>
           </div>
           <div class="hero-demo rise" style="--i: 2" aria-label="과목내비 결과 화면 예시">
@@ -63,16 +64,16 @@
         </div>
         <aside class="notes" data-sec="12">
           <p>안녕하세요, 구현민입니다.</p>
-          <p>저는 『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고, 정말 AI가 다 해 준다면 제 몫은 무엇인지 직접 확인해 봤습니다.</p>
+          <p>저는 『AI가 다 하고 내가 돈 버는 앱 만들기』를 읽고, 정말 AI 하나만으로 돈 버는 프로그램을 만들 수 있는지 직접 해 봤습니다.</p>
         </aside>
       </section>
 
-      <!-- 2. 읽은 책 -->
-      <section class="slide" data-section="book" aria-label="읽은 책">
+      <!-- 2. 읽은 책 · 탐구 질문 -->
+      <section class="slide" data-section="book" aria-label="읽은 책과 궁금증">
         <div class="body">
           <div class="rise">
-            <p class="eyebrow">읽은 책</p>
-            <h2 class="title">아이디어만 있으면, <span class="mark">앱은 AI가</span> 만든다</h2>
+            <p class="eyebrow">읽은 책 · 탐구 질문</p>
+            <h2 class="title">책은 <span class="mark">AI로 앱을 만들어 돈까지</span> 번다고 했다</h2>
           </div>
           <div class="content book">
             <div class="book-card rise" style="--i: 1">
@@ -80,49 +81,37 @@
               <p class="book-meta">서희찬 지음<br />길벗 · 2026</p>
             </div>
             <div class="book-side">
-              <p class="label rise" style="--i: 2">책이 보여 주는 앱 만들기</p>
-              <ol class="book-steps">
-                <li class="rise" style="--i: 2">
-                  <span class="step-no">1</span>
-                  <div><strong>ChatGPT로 기획</strong><span class="sub">MVP와 페르소나 정하기</span></div>
-                </li>
-                <li class="rise" style="--i: 3">
-                  <span class="step-no">2</span>
-                  <div><strong>Cursor로 개발</strong><span class="sub">AI 개발 도구로 만들기</span></div>
-                </li>
-                <li class="rise" style="--i: 4">
-                  <span class="step-no">3</span>
-                  <div><strong>출시와 마케팅</strong><span class="sub">사람들이 쓰게 만들기</span></div>
-                </li>
-                <li class="rise" style="--i: 5">
-                  <span class="step-no">4</span>
-                  <div><strong>광고와 유료화</strong><span class="sub">광고 수익의 현실까지</span></div>
-                </li>
+              <ol class="steps4">
+                <li class="rise" style="--i: 2"><span class="step-no">1</span><strong>ChatGPT로 기획</strong><span class="sub">MVP와 페르소나</span></li>
+                <li class="rise" style="--i: 3"><span class="step-no">2</span><strong>Cursor로 개발</strong><span class="sub">AI 개발 도구</span></li>
+                <li class="rise" style="--i: 4"><span class="step-no">3</span><strong>출시와 마케팅</strong><span class="sub">사람들에게 알리기</span></li>
+                <li class="rise" style="--i: 5"><span class="step-no">4</span><strong>광고와 유료화</strong><span class="sub">광고 수익의 현실</span></li>
               </ol>
-              <div class="note-card rise" style="--i: 6">
-                <p class="label">인상 깊었던 점</p>
-                <p class="note-text">저자는 대단한 아이디어가 아니라 <span class="mark">생활 속 불편함</span>에서 출발해 30여 개의 앱을 만들었다.</p>
+              <p class="book-note rise" style="--i: 6"><strong>인상 깊었던 점</strong> 저자는 생활 속 불편함에서 출발해 30여 개의 앱을 만들었다</p>
+              <div class="ask-box rise" style="--i: 7">
+                <p class="label">그래서 궁금해졌다</p>
+                <p class="ask-text">진짜 AI 하나만으로 <em>돈까지 벌 수 있는 프로그램</em>을 만들 수 있을까?</p>
               </div>
             </div>
           </div>
         </div>
-        <aside class="notes" data-sec="27">
-          <p>이 책은 AI로 앱을 만들어 돈을 버는 과정을 단계별로 보여 줍니다. ChatGPT로 무엇을 만들지 기획하고, Cursor라는 AI 개발 도구로 만들고, 출시한 뒤 광고와 유료화로 수익을 내는 데까지 다룹니다.</p>
+        <aside class="notes" data-sec="30">
+          <p>이 책은 ChatGPT로 기획하고, Cursor라는 AI 도구로 만들고, 출시해서 광고와 유료화로 돈을 버는 과정까지 보여 줍니다.</p>
           <p>가장 인상 깊었던 건, 저자가 대단한 아이디어가 아니라 생활 속 불편함에서 출발해 30개가 넘는 앱을 만들었다는 점입니다.</p>
-          <p class="opt">처음부터 다 만들지 않고 꼭 필요한 기능만 담은 첫 버전, MVP부터 내놓는다는 것도 기억에 남았습니다.</p>
+          <p>그래서 궁금해졌습니다. 진짜 AI 하나만으로 돈까지 벌 수 있는 프로그램을 만들 수 있을까?</p>
         </aside>
       </section>
 
-      <!-- 3. 탐구 질문 -->
-      <section class="slide" data-section="question" aria-label="탐구 질문">
+      <!-- 3. 문제 찾기 -->
+      <section class="slide" data-section="problem" aria-label="또래의 어려움 찾기">
         <div class="body">
           <div class="rise">
-            <p class="eyebrow">탐구 질문</p>
-            <h2 class="title">정말 AI가 다 할까? 그럼 <span class="mark">나는 뭘 하지?</span></h2>
+            <p class="eyebrow">문제 찾기</p>
+            <h2 class="title">내 또래 고등학생은 <span class="mark">무엇이 어려울까?</span></h2>
           </div>
           <div class="content q">
             <div class="q-src">
-              <p class="label rise" style="--i: 1">마침 나에게도 불편함이 있었다: 2학년 선택 과목 고르기</p>
+              <p class="label rise" style="--i: 1">찾아보니: 2학년 선택 과목 고르기</p>
               <div class="src rise" style="--i: 1">
                 <strong>대학 권장과목</strong>
                 <span>대교협 자료집에는 46개 대학뿐</span>
@@ -137,87 +126,101 @@
               </div>
             </div>
             <div class="q-box rise" style="--i: 4">
-              <p class="label">탐구 질문</p>
-              <p class="q-text">AI에게 맡기면 고등학생도 <em>실제로 쓰이는 서비스</em>를 만들 수 있을까?</p>
-              <p class="q-text">그렇다면 <em>사람의 몫</em>은 무엇일까?</p>
+              <p class="label">찾은 문제</p>
+              <p class="q-text">고교학점제로 과목을 직접 골라야 하는데, 필요한 정보가 <em>세 곳에 흩어져</em> 있다</p>
             </div>
           </div>
         </div>
-        <aside class="notes" data-sec="28">
-          <p>읽으면서 궁금해졌습니다. 정말 AI가 다 할까? 그렇다면 사람은 무엇을 해야 할까?</p>
-          <p>마침 저에게도 불편함이 하나 있었습니다. 2학년 선택 과목을 고르려는데, 대학이 권하는 과목과 우리 학교 편제표, 2028 전형 정보가 전부 따로 흩어져 있었습니다.</p>
+        <aside class="notes" data-sec="23">
+          <p>책처럼 불편함에서 시작하려고, 제 또래 고등학생들이 무엇을 어려워하는지 찾아봤습니다.</p>
+          <p>고교학점제 때문에 2학년부터는 선택 과목을 직접 골라야 하는데, 대학이 권하는 과목과 우리 학교 편제표, 2028 전형 정보가 전부 따로 흩어져 있었습니다.</p>
           <p class="opt">대교협이 모아 둔 자료집에도 46개 대학만 실려 있었습니다.</p>
-          <p>그래서 이 불편함을 AI로 직접 해결해 보면서, 제 몫이 무엇인지 확인해 보기로 했습니다.</p>
         </aside>
       </section>
 
-      <!-- 4. 탐구 방법 · 형식을 고른 이유 -->
-      <section class="slide" data-section="method" aria-label="탐구 방법">
+      <!-- 4. 해결 아이디어 · 제안서 -->
+      <section class="slide" data-section="proposal" aria-label="해결 아이디어와 제안서">
         <div class="body">
           <div class="rise">
-            <p class="eyebrow">탐구 방법 · 형식을 고른 이유</p>
-            <h2 class="title">읽고 끝내지 않고, <span class="mark">직접 만들어</span> 확인했다</h2>
+            <p class="eyebrow">해결 아이디어 · 형식을 고른 이유</p>
+            <h2 class="title">흩어진 정보를 <span class="mark">한 화면에</span> 모으자</h2>
           </div>
-          <div class="content">
-            <ol class="reasons">
-              <li class="rise" style="--i: 1">
-                <span class="step-no">1</span>
-                <strong>해 봐야 안다</strong>
-                <p>‘AI가 다 한다’는 말이 맞는지는 직접 만들어 봐야 확인할 수 있다</p>
-              </li>
-              <li class="rise" style="--i: 2">
-                <span class="step-no">2</span>
-                <strong>실제로 쓰이게</strong>
-                <p>나와 친구들이 지금 겪는 문제라, 보고서보다 쓸 수 있는 서비스가 낫다</p>
-              </li>
-              <li class="rise" style="--i: 3">
-                <span class="step-no">3</span>
-                <strong>학교에 제안하게</strong>
-                <p>서비스와 함께 제안서를 써서 학교에서 쓰는 방법까지 정리했다</p>
-              </li>
-            </ol>
-            <div class="timeline rise" style="--i: 4" aria-label="진행 과정">
-              <div class="tl"><span class="tl-date num">10. 19.</span><span class="tl-text">만들기 시작</span></div>
-              <div class="tl is-key"><span class="tl-date num">10. 22.</span><span class="tl-text">navi.milky.kr 공개</span></div>
-              <div class="tl"><span class="tl-date num">10. 23.</span><span class="tl-text">보안 점검, 대학 209곳</span></div>
-              <div class="tl"><span class="tl-date num">10. 24.</span><span class="tl-text">전형 201개 대학</span></div>
-              <div class="tl"><span class="tl-date num">10. 26.</span><span class="tl-text">제안서</span></div>
+          <div class="content prop">
+            <figure class="docs rise" style="--i: 1">
+              <img class="doc doc-back" src="img/proposal-page.webp" alt="제안서 본문 첫 쪽: 제안 개요" width="910" height="1287" />
+              <img class="doc doc-front" src="img/proposal-cover.webp" alt="과목내비 서비스 제안서 표지" width="910" height="1287" />
+              <figcaption>과목내비 서비스 제안서</figcaption>
+            </figure>
+            <div class="prop-side">
+              <p class="flow rise" style="--i: 2">
+                <span class="chip">우리 학교 편제표</span><span class="op">+</span><span class="chip">대학 권장과목</span><span class="op">+</span><span class="chip">2028 전형</span><span class="op">→</span><span class="chip is-on">학기별 과목 추천</span>
+              </p>
+              <ul class="prop-list">
+                <li class="rise" style="--i: 3"><strong>대상</strong><span>2학년 선택 과목을 고르는 1학년, 담임·진로 선생님</span></li>
+                <li class="rise" style="--i: 4"><strong>활용</strong><span>수강신청 전에 학생이 계획표를 만들고, 선생님은 그 계획표로 상담한다</span></li>
+                <li class="rise" style="--i: 5"><strong>형식</strong><span>아이디어로 끝내지 않고, 제안서로 정리한 뒤 실제 서비스로 만든다</span></li>
+              </ul>
             </div>
-            <p class="tl-note rise" style="--i: 5">만들기 시작하고 <span class="mark">사흘 만에 공개</span>했다</p>
           </div>
         </div>
-        <aside class="notes" data-sec="25">
-          <p>그래서 결과물은 보고서가 아니라 실제로 쓰는 서비스로 정했습니다. 책의 말이 맞는지는 직접 해 봐야 알 수 있고, 친구들이 지금 겪는 문제라 실제로 쓸 수 있어야 의미가 있다고 생각했습니다.</p>
-          <p>10월 19일에 만들기 시작해 사흘 뒤 navi.milky.kr로 공개했고, 학교에 제안하려고 제안서도 썼습니다.</p>
-          <p class="opt">지금 보시는 발표 화면도 사이트와 같은 디자인의 웹페이지로 만들었습니다.</p>
+        <aside class="notes" data-sec="27">
+          <p>그래서 이 세 가지를 한 화면에 모아, 우리 학교 편제표에 맞춰 학기별로 들을 과목을 추천해 주는 서비스를 생각했습니다. 이름은 과목내비입니다.</p>
+          <p>아이디어로 끝내지 않으려고 먼저 제안서로 정리했습니다. 수강신청 전에 학생이 계획표를 만들고, 선생님이 그 계획표로 상담하는 방식을 담았습니다.</p>
         </aside>
       </section>
 
-      <!-- 5. 추가 조사 -->
-      <section class="slide" data-section="method" aria-label="추가 조사">
+      <!-- 5. 개발 · 배포 -->
+      <section class="slide" data-section="build" aria-label="개발과 배포">
         <div class="body">
           <div class="rise">
-            <p class="eyebrow">추가 조사</p>
-            <h2 class="title">공식 자료도, AI도 <span class="mark">그대로 믿지 않았다</span></h2>
+            <p class="eyebrow">개발 · 배포</p>
+            <h2 class="title">내 Claude로 개발하고, <span class="mark">사흘 만에 배포</span>했다</h2>
           </div>
-          <div class="content two">
-            <div class="panel rise" style="--i: 1">
-              <p class="label">자료 대조</p>
-              <p class="panel-title">대교협 자료집과 대학 원문을 하나씩 대조했다</p>
-              <p class="big">약 350곳<small>이 달랐다</small></p>
-              <ul class="facts">
-                <li>대부분 자료집에 옮겨 적다 생긴 실수</li>
-                <li>예: 인하대 자연계열 32개 학과에서 미적분Ⅱ가 빠져 있었다</li>
-                <li>원문 기준으로 고치고, 자료집에 없는 대학도 원문을 찾았다</li>
-              </ul>
-              <div class="mini">
-                <div><strong>46</strong><span>자료집에 실린 대학</span></div>
-                <span class="op">→</span>
-                <div><strong>209</strong><span>직접 확인한 대학</span></div>
-              </div>
+          <div class="content build">
+            <p class="dates rise" style="--i: 1">
+              <span class="pill num">10. 19. 개발 시작</span><span class="op">→</span><span class="pill is-key num">10. 22. navi.milky.kr 배포</span>
+            </p>
+            <p class="label asks-label rise" style="--i: 2">내가 Claude에게 한 말</p>
+            <ul class="asks">
+              <li class="ask rise" style="--i: 2">
+                <q>취약점이나 버그 있으면 다 수정해 줘. 최대한 꼼꼼하게</q>
+                <p class="res"><span class="num">10. 23.</span>약 70건을 찾아 고침</p>
+              </li>
+              <li class="ask rise" style="--i: 3">
+                <q>무료 AI가 가져온 것들, 성능 좋은 AI가 확인해 주는 기능 만들어 줘</q>
+                <p class="res"><span class="num">10. 23.</span>AI 검수 기능</p>
+              </li>
+              <li class="ask rise" style="--i: 4">
+                <q>못 가져온 대학이 너무 많아</q>
+                <p class="res"><span class="num">10. 24.</span>원문 찾는 길을 늘려 ‘못 함’ 20곳 → 0곳</p>
+              </li>
+            </ul>
+            <div class="stats rise" style="--i: 5">
+              <div><strong>209</strong><span>대학</span></div>
+              <div><strong>2,076</strong><span>학과(모집단위)</span></div>
+              <div><strong>151</strong><span>2022 개정 과목</span></div>
+              <div><strong>약 3,500</strong><span>2028 전형 (201개 대학)</span></div>
             </div>
-            <div class="panel rise" style="--i: 2">
-              <p class="label">AI 실측</p>
+            <p class="asof rise" style="--i: 5">2026. 10. 26. 기준</p>
+          </div>
+        </div>
+        <aside class="notes" data-sec="39">
+          <p>그리고 제안서를 바탕으로 제 Claude에게 개발을 맡겼습니다. 저는 무엇을 만들지 말로 정하고, 나온 결과를 직접 써 보면서 고칠 점을 찾았습니다.</p>
+          <p>예를 들어 “취약점이나 버그 있으면 다 수정해 줘”라고 하면 70건쯤을 찾아 고쳤고, “못 가져온 대학이 너무 많아”라고 하면 원문 찾는 방법을 늘려서 못 가져온 대학 20곳을 0곳으로 줄였습니다.</p>
+          <p>10월 19일에 시작해 사흘 만에 배포했고, 지금은 209개 대학과 2028 전형 약 3,500개가 들어 있습니다.</p>
+        </aside>
+      </section>
+
+      <!-- 6. AI 성능 테스트 -->
+      <section class="slide" data-section="test" aria-label="AI 성능 테스트">
+        <div class="body">
+          <div class="rise">
+            <p class="eyebrow">추가 조사 · AI 성능 테스트</p>
+            <h2 class="title">AI 성능을 <span class="mark">직접 시험</span>하고 정확도를 비교했다</h2>
+          </div>
+          <div class="content two test">
+            <div class="panel rise" style="--i: 1">
+              <p class="label">편제표 읽기 실측</p>
               <p class="panel-title">같은 편제표를 AI 12개에게 읽혀 봤다</p>
               <div class="bars" role="list" aria-label="편제표 읽기 정확도, 1이 만점">
                 <div class="bar-grid" aria-hidden="true"><span style="left: 0"></span><span style="left: 50%"></span><span style="left: 100%"></span></div>
@@ -252,59 +255,70 @@
               </div>
               <ul class="facts">
                 <li>나머지 3개는 답을 못 냈다. 돈이 가장 많이 든 모델도 그중 하나</li>
-                <li>정답 후보(표준 과목명)를 알려 주자 더 정확해졌다</li>
+              </ul>
+            </div>
+            <div class="panel rise" style="--i: 2">
+              <p class="label">알게 된 것</p>
+              <ul class="stat-list">
+                <li class="stat"><strong class="num-p">0.944 → 0.987</strong><span>정답 후보(표준 과목명)를 알려 주자 더 정확해졌다 (Gemini 3.5 Flash-Lite)</span></li>
+                <li class="stat"><strong>517곳</strong><span>무료 AI가 옮긴 2028 전형을 더 정확한 AI가 원문과 대조해 고친 곳 (68개 대학)</span></li>
+                <li class="stat"><strong>약 200원</strong><span>편제표 실험에 든 비용 전부</span></li>
               </ul>
             </div>
           </div>
         </div>
-        <aside class="notes" data-sec="40">
-          <p>만들면서 따로 조사한 것이 두 가지 있습니다.</p>
-          <p>하나는 자료입니다. 대교협 자료집을 각 대학이 직접 올린 원문과 하나씩 대조해 봤더니 약 350곳이 달랐습니다. 대부분 자료집에 옮겨 적다가 생긴 실수였고, 원문 기준으로 고쳤습니다.</p>
-          <p>다른 하나는 AI입니다. 학교 편제표를 읽는 일을 AI 12개에게 똑같이 시켜 봤더니 정확도가 0.16부터 거의 1까지 크게 갈렸습니다. 돈이 가장 많이 든 모델은 아예 답을 못 냈고, 모델을 바꾸는 것보다 정답 후보를 알려 주는 쪽이 정확도를 더 올렸습니다.</p>
+        <aside class="notes" data-sec="32">
+          <p>AI가 정말 믿을 만한지도 직접 시험했습니다. 학교 편제표를 읽는 일을 AI 12개에게 똑같이 시켜 보니, 정확도가 0.16부터 거의 1까지 크게 갈렸습니다. 돈이 가장 많이 든 모델은 아예 답을 못 냈습니다.</p>
+          <p>정답 후보를 알려 주자 더 정확해졌고, 실제 서비스에서는 무료 AI가 옮긴 전형을 더 정확한 AI가 원문과 대조해 517곳을 고쳤습니다.</p>
           <p class="opt">이 실험에 든 돈은 모두 합쳐 200원쯤이었습니다.</p>
         </aside>
       </section>
 
-      <!-- 6. 제안서 -->
-      <section class="slide" data-section="proposal" aria-label="제안서">
+      <!-- 7. 결론: 탐구 질문의 답 · 진로 변화 · 알리고 싶은 것 -->
+      <section class="slide" data-section="answer" aria-label="탐구 질문의 답">
         <div class="body">
           <div class="rise">
-            <p class="eyebrow">탐구 결과물 · 제안서</p>
-            <h2 class="title">과목내비를 <span class="mark">학교에 제안</span>합니다</h2>
+            <p class="eyebrow">탐구 질문의 답 · 진로 변화</p>
+            <h2 class="title">만드는 건 AI로 됐다, 이제 <span class="mark">쓰는 사람을 만날</span> 차례</h2>
           </div>
           <div class="content">
-            <div class="prop">
-              <div class="docs rise" style="--i: 1">
-                <img class="doc doc-back" src="img/proposal-page.webp" alt="제안서 본문 첫 쪽: 제안 개요" width="910" height="1287" />
-                <img class="doc doc-front" src="img/proposal-cover.webp" alt="과목내비 서비스 제안서 표지" width="910" height="1287" />
+            <ul class="ans">
+              <li class="ans-card rise" style="--i: 1">
+                <p class="label">만들기</p>
+                <p class="ans-big">AI로 충분했다</p>
+                <p class="ans-text">코드도, 대학 원문 옮기기도 AI가 했다. 사흘 만에 배포</p>
+              </li>
+              <li class="ans-card is-me rise" style="--i: 2">
+                <p class="label">확인</p>
+                <p class="ans-big">내 몫이었다</p>
+                <p class="ans-text">AI마다 정확도가 달라서, 무엇을 믿을지는 직접 시험하고 골랐다</p>
+              </li>
+              <li class="ans-card rise" style="--i: 3">
+                <p class="label">돈</p>
+                <p class="ans-big">아직이다</p>
+                <p class="ans-text">돈이 되려면 쓰는 사람이 먼저. <strong>중학교 진로 선생님께 공유</strong>했고, 오늘 여러분께 보여 드린다</p>
+              </li>
+            </ul>
+            <div class="end-row">
+              <div class="end-card rise" style="--i: 4">
+                <p class="label">진로 변화</p>
+                <p class="end-text"><span class="was">코드를 잘 짜는 개발자</span> → 문제를 찾고, 만들고, 알리는 개발자. 언젠가는 내 서비스로 창업</p>
               </div>
-              <div class="prop-side">
-                <p class="flow rise" style="--i: 2">
-                  <span class="chip">우리 학교 편제표</span><span class="op">+</span><span class="chip">대학 권장과목</span><span class="op">+</span><span class="chip">2028 전형</span><span class="op">→</span><span class="chip is-on">학기별 과목 추천</span>
-                </p>
-                <ul class="prop-list">
-                  <li class="rise" style="--i: 3"><strong>자동 갱신</strong><span>무료 AI가 대학 원문을 옮기고, 더 정확한 AI가 원문과 대조해 검수한다</span></li>
-                  <li class="rise" style="--i: 4"><strong>활용 제안</strong><span>수강신청 전에 학생이 계획표를 만들고, 선생님은 그 계획표로 상담한다</span></li>
-                </ul>
+              <div class="end-card rise" style="--i: 5">
+                <p class="label">알리고 싶은 것</p>
+                <p class="end-text">불편함 하나면 시작할 수 있다. 다만 AI가 한 일은 꼭 확인하자.</p>
               </div>
             </div>
-            <div class="stats rise" style="--i: 5">
-              <div><strong>209</strong><span>대학 (학과별 권장과목 75곳)</span></div>
-              <div><strong>2,076</strong><span>학과(모집단위)</span></div>
-              <div><strong>약 3,500</strong><span>2028 전형 (201개 대학)</span></div>
-              <div><strong>517</strong><span>AI 검수로 고친 곳</span></div>
-            </div>
-            <p class="asof rise" style="--i: 5">2026. 10. 26. 기준</p>
           </div>
         </div>
-        <aside class="notes" data-sec="33">
-          <p>이렇게 만든 서비스가 과목내비입니다. 우리 학교 편제표와 대학 권장과목, 2028 전형을 한곳에 모아 학기별로 들을 과목을 추천합니다.</p>
-          <p>전형 자료는 사람이 옮기지 않습니다. 무료 AI가 대학 원문을 옮기면, 더 정확한 AI가 원문과 대조해 다시 검수합니다. 검수에서 고친 곳만 517곳이었습니다.</p>
-          <p>제안서에는 수강신청 전에 학생이 계획표를 만들고, 선생님이 그 계획표로 상담하는 방식을 담았습니다.</p>
+        <aside class="notes" data-sec="40">
+          <p>그래서 처음 질문에 대한 제 답은 이렇습니다. 프로그램을 만들고 배포하는 것까지는 AI로 충분했습니다. 하지만 어떤 AI를 믿을지, 결과가 맞는지는 제가 직접 확인해야 했습니다.</p>
+          <p>그리고 돈은 아직입니다. 돈이 되려면 먼저 쓰는 사람이 있어야 해서, 중학교 진로 선생님께도 공유해 드렸습니다.</p>
+          <p>이번 탐구로 개발자는 코드만 짜는 사람이 아니라 문제를 찾고, 만들고, 알리는 사람이라는 걸 알게 됐습니다. 저도 그런 개발자가 되어 언젠가 창업해 보고 싶습니다.</p>
         </aside>
       </section>
 
-      <!-- 7. 시연 -->
+      <!-- 8. 시연 -->
       <section class="slide" data-section="demo" aria-label="시연">
         <div class="body">
           <div class="rise">
@@ -324,6 +338,7 @@
                 <li class="rise" style="--i: 5"><span class="step-no">3</span>학기별 추천 과목</li>
                 <li class="rise" style="--i: 6"><span class="step-no">4</span>지원할 수 있는 전형</li>
               </ol>
+              <p class="thanks rise" style="--i: 7">감사합니다</p>
             </div>
             <div class="shots rise" style="--i: 3">
               <figure class="shot shot-back"><img src="img/univ.webp" alt="대학별 2028 전형 화면" width="1264" height="900" /></figure>
@@ -331,62 +346,15 @@
             </div>
           </div>
         </div>
-        <aside class="notes" data-sec="60">
+        <aside class="notes" data-sec="62">
           <p class="cue">브라우저의 과목내비 탭으로 넘어갑니다.</p>
-          <p>직접 보여 드리겠습니다.</p>
+          <p>그럼 직접 보여 드리겠습니다.</p>
           <p><b>① 우리 학교</b> 학교 이름으로 찾으면 학교알리미와 학교 홈페이지에서 편제표를 찾아 AI가 읽어 옵니다.</p>
-          <p class="opt">한 번 읽은 학교는 다른 친구도 기다리지 않고 바로 씁니다.</p>
-          <p><b>② 분야와 대학</b> 가고 싶은 분야와 목표 대학을 고릅니다. 진로를 문장으로 적어도 AI가 학과로 바꿔 줍니다.</p>
-          <p><b>③ 학기별 추천</b> 그러면 2학년부터 학기별로 들을 과목이 나옵니다. 파란 막대가 붙은 과목이 권장과목을 채우려고 고른 과목이고, 왜 골랐는지도 함께 보여 줍니다. 우리 학교에 없는 과목은 위에서 따로 알려 줍니다.</p>
-          <p><b>④ 전형</b> 대학을 누르면 2028 전형과 제가 지원할 수 있는지가 나옵니다. AI가 옮긴 자료인지, AI 검수까지 마쳤는지도 표시됩니다.</p>
+          <p><b>② 분야와 대학</b> 가고 싶은 분야와 목표 대학을 고릅니다.</p>
+          <p class="opt">진로를 문장으로 적어도 AI가 학과로 바꿔 줍니다.</p>
+          <p><b>③ 학기별 추천</b> 그러면 2학년부터 학기별로 들을 과목이 나옵니다. 파란 막대가 붙은 과목이 권장과목을 채우려고 고른 과목이고, 왜 골랐는지도 함께 보여 줍니다.</p>
+          <p><b>④ 전형</b> 대학을 누르면 2028 전형과 제가 지원할 수 있는지가 나옵니다.</p>
           <p class="cue">발표 화면으로 돌아옵니다.</p>
-          <p class="opt">시간이 남으면 관리 화면의 대입 자료 탭에서 AI가 가져온 대학 목록을 보여 줍니다. 사용자 탭은 열지 않습니다.</p>
-        </aside>
-      </section>
-
-      <!-- 8. 마무리 -->
-      <section class="slide" data-section="end" aria-label="마무리">
-        <div class="body">
-          <div class="rise">
-            <p class="eyebrow">탐구 질문의 답 · 진로 변화</p>
-            <h2 class="title">AI는 빨랐고, <span class="mark">판단은 내 몫</span>이었다</h2>
-          </div>
-          <div class="content">
-            <div class="vs">
-              <div class="vs-card rise" style="--i: 1">
-                <p class="label">AI가 한 일</p>
-                <ul>
-                  <li>코드 짜기</li>
-                  <li>대학 원문 읽고 옮기기</li>
-                  <li>다른 AI가 옮긴 자료 검수하기</li>
-                </ul>
-              </div>
-              <div class="vs-card is-me rise" style="--i: 2">
-                <p class="label">내가 한 일</p>
-                <ul>
-                  <li>무엇을 왜 만들지 정하기</li>
-                  <li>직접 써 보며 이상한 곳 찾기</li>
-                  <li>무엇을 믿고, 어떤 정보를 받을지 정하기</li>
-                </ul>
-              </div>
-            </div>
-            <div class="end-row">
-              <div class="end-card rise" style="--i: 3">
-                <p class="label">진로 변화</p>
-                <p class="end-text"><span class="was">코드를 잘 짜는 개발자</span> → 무엇을 왜 만들지 정하고 보안까지 책임지는 개발자, 언젠가는 내 서비스로 창업</p>
-              </div>
-              <div class="end-card rise" style="--i: 4">
-                <p class="label">알리고 싶은 것</p>
-                <p class="end-text">불편함 하나면 시작할 수 있다. 다만 AI가 한 일은 꼭 확인하자.</p>
-              </div>
-            </div>
-            <p class="thanks rise" style="--i: 5">감사합니다</p>
-          </div>
-        </div>
-        <aside class="notes" data-sec="43">
-          <p>처음 질문으로 돌아가 보겠습니다. 직접 해 보니 코드를 짜고 자료를 옮기는 일은 정말 AI가 다 했고, 무척 빨랐습니다. 하지만 무엇을 만들지, 결과가 맞는지, 어떤 정보를 받아도 되는지는 AI가 정해 주지 않았습니다. 그게 제 몫이었습니다.</p>
-          <p>그래서 개발자에 대한 생각도 바뀌었습니다. 코드를 잘 짜는 사람보다, 무엇을 왜 만들지 정하고 보안까지 책임지는 개발자가 되고 싶습니다. 언젠가는 제 서비스로 창업도 해 보고 싶습니다.</p>
-          <p class="opt">전에 개인정보 유출 사건을 조사하면서 보안은 처음부터 생각해야 한다고 썼는데, 직접 만들어 보니 공개하기 전에 로그인 방식과 관리자 권한, AI 키 보관부터 정해야 했습니다.</p>
           <p>여러분도 불편함 하나만 있으면 시작할 수 있습니다. 다만 AI가 한 일은 꼭 직접 확인해 보세요. 감사합니다.</p>
         </aside>
       </section>
@@ -413,8 +381,8 @@
           <li>시연용 슬롯을 하나 만들어 학교, 분야, 대학까지 골라 둔다. 시연 때는 그 슬롯만 열면 된다.</li>
           <li>탭 두 개를 열어 둔다: 이 발표 화면, 과목내비의 ‘내 과목 설계’.</li>
           <li>편제표 읽기와 진로 문장 찾기는 AI를 불러서 몇 초에서 수십 초가 걸린다. 시연은 이미 불러온 학교로 한다.</li>
-          <li>인터넷이 안 되면 7장의 화면 캡처 두 장으로 설명한다.</li>
-          <li>6장 숫자는 2026. 10. 26. 기준이다. 발표 전에 최신 숫자로 바꾼다.</li>
+          <li>인터넷이 안 되면 8장의 화면 캡처 두 장으로 설명한다.</li>
+          <li>5장과 6장의 숫자는 2026. 10. 26. 기준이다. 발표 전에 최신 숫자로 바꾼다.</li>
         </ul>
       </section>
       <section class="sv-box">
@@ -425,7 +393,7 @@
     </template>
     <template id="script-after">
       <section class="sv-box">
-        <h2>5장 그래프 자료</h2>
+        <h2>6장 그래프 자료</h2>
         <p>2026. 10. 19. 실측. 반송고 2026 편제표 PDF 앞 4쪽을 그림 4장으로 읽혀, 손으로 옮긴 정답과 대조했다. 정확도는 학기·과목·종류(지정/선택)가 맞은 정도(F1)로, 1이 만점.</p>
         <table class="sv-table">
           <thead>
@@ -447,6 +415,7 @@
           </tbody>
         </table>
         <p>2차로 표준 과목명 목록을 알려 주고 다시 읽히자 Claude Haiku 5.5는 두 번 연속 1.000, Gemini 3.8 Flash는 0.996, Gemini 3.5 Flash-Lite는 0.987이 됐다. 실측에 든 비용은 모두 합쳐 약 $0.15(약 200원).</p>
+        <p>517곳: 2026. 10. 26.까지 AI 검수를 마친 68개 대학에서, 무료 AI(Gemini)가 시행계획 원문에서 옮긴 전형을 유료 AI(Claude)가 원문과 다시 대조해 고친 곳의 수.</p>
       </section>
     </template>
   </body>

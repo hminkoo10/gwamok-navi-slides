@@ -273,7 +273,7 @@ html.view-deck body {
   align-items: center;
 }
 .cover h1 {
-  font-size: 100px;
+  font-size: 92px;
   font-weight: 850;
   line-height: 1.17;
   letter-spacing: -0.045em;
@@ -281,7 +281,7 @@ html.view-deck body {
 .cover .lead {
   margin-top: 36px;
   color: var(--ink-2);
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.55;
 }
 .byline {
@@ -367,26 +367,27 @@ html.view-deck body {
   font-size: 21px;
 }
 
-/* ---- 2. 읽은 책 ---- */
+/* ---- 2. 읽은 책 · 탐구 질문 ---- */
+/* 책 카드는 오른쪽 내용 높이에 맞추고, 묶음을 세로 가운데에 */
 .book {
   display: grid;
-  grid-template-columns: 420px minmax(0, 1fr);
-  gap: 56px;
-  align-items: start;
+  grid-template-columns: 400px minmax(0, 1fr);
+  align-content: center;
+  gap: 52px;
 }
 .book-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 560px;
-  padding: 52px 44px 44px;
+  min-height: 420px;
+  padding: 48px 44px 40px;
   border-radius: 28px;
   background: var(--bar-bg);
   color: var(--bar-ink);
   box-shadow: var(--shadow-lg);
 }
 .book-title {
-  font-size: 54px;
+  font-size: 52px;
   font-weight: 850;
   line-height: 1.25;
   letter-spacing: -0.04em;
@@ -396,52 +397,68 @@ html.view-deck body {
   font-size: 25px;
   line-height: 1.5;
 }
-.book-steps {
+.steps4 {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  margin-top: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
-.book-steps li {
-  display: flex;
-  align-items: flex-start;
-  gap: 22px;
-  padding: 30px 32px;
-  border-radius: 24px;
+.steps4 li {
+  padding: 24px 24px 26px;
+  border-radius: 22px;
   background: var(--bg-soft);
 }
-.book-steps strong {
+.steps4 .step-no {
+  width: 44px;
+  height: 44px;
+  font-size: 21px;
+}
+.steps4 strong {
   display: block;
-  font-size: 30px;
+  margin-top: 16px;
+  font-size: 26px;
   font-weight: 750;
   line-height: 1.3;
+  white-space: nowrap;
 }
-.book-steps .sub {
+.steps4 .sub {
   display: block;
-  margin-top: 6px;
+  margin-top: 4px;
   color: var(--ink-2);
-  font-size: 23px;
+  font-size: 21px;
 }
-.note-card {
-  margin-top: 28px;
-  padding: 30px 36px;
-  border-radius: 24px;
+.book-note {
+  margin-top: 24px;
+  color: var(--ink-2);
+  font-size: 25px;
+  line-height: 1.5;
+}
+.book-note strong {
+  margin-right: 12px;
+  color: var(--ink);
+  font-weight: 750;
+}
+.ask-box {
+  margin-top: 24px;
+  padding: 34px 40px;
+  border-radius: 26px;
   background: var(--primary-soft);
 }
-.note-card .label {
+.ask-box .label {
   color: var(--primary-text);
 }
-.note-text {
+.ask-text {
   margin-top: 10px;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.45;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
 }
-.note-card .mark {
-  background: linear-gradient(transparent 58%, var(--primary-soft-2) 58%);
+.ask-text em {
+  color: var(--primary-text);
+  font-style: normal;
 }
 
-/* ---- 3. 탐구 질문 ---- */
+/* ---- 3. 문제 찾기 ---- */
 .q {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -496,84 +513,182 @@ html.view-deck body {
   font-style: normal;
 }
 
-/* ---- 4. 탐구 방법 ---- */
-.reasons {
+
+/* ---- 4. 해결 아이디어 · 제안서 ---- */
+.prop {
+  display: grid;
+  grid-template-columns: 600px minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+}
+.docs {
+  position: relative;
+  height: 452px;
+  margin: 0;
+}
+.docs figcaption {
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+  color: var(--ink-3);
+  font-size: 22px;
+  font-weight: 650;
+}
+.doc {
+  position: absolute;
+  width: 270px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: var(--shadow-lg);
+}
+.doc-front {
+  left: 24px;
+  top: 0;
+  z-index: 2;
+}
+.doc-back {
+  left: 296px;
+  top: 14px;
+  transform: rotate(3deg);
+}
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 26px;
+}
+.chip {
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  font-weight: 650;
+  white-space: nowrap;
+}
+.chip.is-on {
+  background: var(--primary);
+  color: #fff;
+}
+.op {
+  color: var(--ink-3);
+  font-weight: 700;
+}
+.prop-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 40px;
+}
+.prop-list li {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 20px;
+  font-size: 26px;
+  line-height: 1.5;
+}
+.prop-list strong {
+  font-weight: 750;
+}
+.prop-list span {
+  color: var(--ink-2);
+}
+
+/* ---- 5. 개발 · 배포 ---- */
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 27px;
+  font-weight: 700;
+}
+.pill {
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+}
+.pill.is-key {
+  background: var(--primary);
+  color: #fff;
+}
+.asks-label {
+  margin-top: 40px;
+}
+.asks {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  margin-top: 14px;
 }
-.reasons li {
-  padding: 36px 38px;
-  border-radius: 28px;
+/* 내가 한 말은 대화 말풍선처럼 */
+.ask {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 26px 28px;
+  border-radius: 24px;
   background: var(--bg-soft);
 }
-.reasons strong {
+.ask q {
   display: block;
-  margin-top: 22px;
-  font-size: 32px;
-  font-weight: 750;
-}
-.reasons p {
-  margin-top: 10px;
-  color: var(--ink-2);
-  font-size: 25px;
-  line-height: 1.5;
-}
-.timeline {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-top: 64px;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 11px;
-  height: 2px;
-  background: var(--line-strong);
-}
-.tl {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  gap: 4px;
-  text-align: center;
-}
-.tl::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  margin-bottom: 14px;
-  border: 4px solid var(--mark);
-  border-radius: 50%;
+  padding: 18px 22px;
+  border-radius: 20px 20px 20px 6px;
   background: var(--bg);
+  font-size: 25px;
+  font-weight: 650;
+  line-height: 1.45;
+  quotes: '“' '”';
 }
-.tl.is-key::before {
-  background: var(--mark);
-  box-shadow: 0 0 0 8px var(--primary-soft);
-}
-.tl-date {
-  font-size: 28px;
-  font-weight: 800;
-}
-.tl-text {
-  color: var(--ink-2);
+.res {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
   font-size: 24px;
+  font-weight: 650;
 }
-.tl.is-key .tl-text {
-  color: var(--ink);
-  font-weight: 700;
+.res .num {
+  flex: none;
+  color: var(--ink-3);
+  font-size: 21px;
+  font-weight: 600;
 }
-.tl-note {
+.build .stats {
   margin-top: 40px;
-  font-size: 32px;
-  font-weight: 750;
-  text-align: center;
+}
+/* 사이트 첫 화면의 어두운 숫자 띠 */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+  padding: 32px 48px;
+  border-radius: 28px;
+  background: var(--bar-bg);
+  color: var(--bar-ink);
+}
+.stats strong {
+  display: block;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.stats span {
+  display: block;
+  margin-top: 4px;
+  font-size: 22px;
+  opacity: 0.75;
+}
+.asof {
+  margin-top: 12px;
+  color: var(--ink-3);
+  font-size: 20px;
+  text-align: right;
 }
 
-/* ---- 5. 추가 조사 ---- */
+/* ---- 6. AI 성능 테스트 ---- */
 .two {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -590,19 +705,6 @@ html.view-deck body {
   margin-top: 6px;
   font-size: 30px;
   font-weight: 750;
-}
-.big {
-  margin-top: 34px;
-  font-size: 104px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.03em;
-}
-.big small {
-  margin-left: 8px;
-  font-size: 40px;
-  font-weight: 750;
-  letter-spacing: -0.02em;
 }
 .facts {
   display: grid;
@@ -625,30 +727,6 @@ html.view-deck body {
   height: 8px;
   border-radius: 50%;
   background: var(--ink-3);
-}
-.mini {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-top: auto;
-  padding: 22px 32px;
-  border-radius: 22px;
-  background: var(--bg);
-}
-.mini strong {
-  display: block;
-  font-size: 52px;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-.mini span {
-  display: block;
-  color: var(--ink-2);
-  font-size: 21px;
-}
-.mini .op {
-  font-size: 34px;
 }
 .panel .bars + .facts {
   margin-top: 18px;
@@ -726,109 +804,91 @@ html.view-deck body {
   font-size: 20px;
   transform: translateX(-50%);
 }
-
-/* ---- 6. 제안서 ---- */
-.prop {
+.test {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+}
+.stat-list {
   display: grid;
-  grid-template-columns: 600px minmax(0, 1fr);
-  gap: 64px;
-  align-items: center;
-}
-.docs {
-  position: relative;
-  height: 392px;
-}
-.doc {
-  position: absolute;
-  width: 270px;
-  height: auto;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: var(--shadow-lg);
-}
-.doc-front {
-  left: 24px;
-  top: 0;
-  z-index: 2;
-}
-.doc-back {
-  left: 296px;
-  top: 14px;
-  transform: rotate(3deg);
-}
-.flow {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   gap: 14px;
-  font-size: 26px;
+  margin-top: 18px;
 }
-.chip {
-  padding: 12px 24px;
-  border-radius: 999px;
-  background: var(--bg-soft);
-  font-weight: 650;
-  white-space: nowrap;
+.stat {
+  padding: 20px 26px;
+  border-radius: 20px;
+  background: var(--bg);
 }
-.chip.is-on {
-  background: var(--primary);
-  color: #fff;
-}
-.op {
-  color: var(--ink-3);
-  font-weight: 700;
-}
-.prop-list {
-  display: grid;
-  gap: 22px;
-  margin-top: 40px;
-}
-.prop-list li {
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 20px;
-  font-size: 26px;
-  line-height: 1.5;
-}
-.prop-list strong {
-  font-weight: 750;
-}
-.prop-list span {
-  color: var(--ink-2);
-}
-/* 사이트 첫 화면의 어두운 숫자 띠 */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: 36px;
-  padding: 32px 48px;
-  border-radius: 28px;
-  background: var(--bar-bg);
-  color: var(--bar-ink);
-}
-.stats strong {
+.stat strong {
   display: block;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
-.stats span {
+.stat span {
   display: block;
-  margin-top: 4px;
-  font-size: 22px;
-  opacity: 0.75;
-}
-.asof {
-  margin-top: 12px;
-  color: var(--ink-3);
-  font-size: 20px;
-  text-align: right;
+  margin-top: 8px;
+  color: var(--ink-2);
+  font-size: 21px;
+  line-height: 1.45;
 }
 
-/* ---- 7. 시연 ---- */
+/* ---- 7. 결론: 탐구 질문의 답 ---- */
+.ans {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.ans-card {
+  padding: 30px 34px;
+  border-radius: 26px;
+  background: var(--bg-soft);
+}
+/* 확인은 내 몫: 사이트에서 '고른 과목'처럼 파란 막대 */
+.ans-card.is-me {
+  background: var(--mark-soft);
+  box-shadow: inset 6px 0 0 var(--mark);
+}
+.ans-big {
+  margin-top: 6px;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.ans-text {
+  margin-top: 10px;
+  color: var(--ink-2);
+  font-size: 23px;
+  line-height: 1.5;
+}
+.ans-text strong {
+  color: var(--ink);
+  font-weight: 750;
+}
+.end-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 28px;
+}
+.end-card {
+  padding: 24px 38px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+}
+.end-text {
+  margin-top: 8px;
+  font-size: 27px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.was {
+  color: var(--ink-3);
+  font-weight: 500;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+/* ---- 8. 시연 ---- */
 .demo {
   display: grid;
   grid-template-columns: 620px minmax(0, 1fr);
@@ -854,7 +914,7 @@ html.view-deck body {
 }
 .qr {
   flex: none;
-  width: 216px;
+  width: 190px;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -872,14 +932,19 @@ html.view-deck body {
 }
 .demo-steps {
   display: grid;
-  gap: 14px;
-  margin-top: 40px;
+  gap: 10px;
+  margin-top: 32px;
+}
+.demo-steps .step-no {
+  width: 46px;
+  height: 46px;
+  font-size: 22px;
 }
 .demo-steps li {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 700;
 }
 .shots {
@@ -909,64 +974,8 @@ html.view-deck body {
   top: 0;
   width: 600px;
 }
-
-/* ---- 8. 마무리 ---- */
-.vs {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
-}
-.vs-card {
-  padding: 30px 38px;
-  border-radius: 28px;
-  background: var(--bg-soft);
-}
-.vs-card ul {
-  display: grid;
-  gap: 10px;
-  margin-top: 14px;
-}
-.vs-card li {
-  padding: 13px 22px;
-  border-radius: 16px;
-  background: var(--bg);
-  font-size: 26px;
-  font-weight: 650;
-}
-/* 내가 한 일은 사이트에서 '고른 과목'처럼 파란 막대 */
-.vs-card.is-me li {
-  background: var(--mark-soft);
-  box-shadow: inset 6px 0 0 var(--mark);
-}
-.vs-card.is-me {
-  border: 1px solid var(--line);
-  background: var(--bg);
-}
-.end-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
-  margin-top: 24px;
-}
-.end-card {
-  padding: 24px 38px;
-  border: 1px solid var(--line);
-  border-radius: 28px;
-}
-.end-text {
-  margin-top: 8px;
-  font-size: 27px;
-  font-weight: 650;
-  line-height: 1.5;
-}
-.was {
-  color: var(--ink-3);
-  font-weight: 500;
-  text-decoration: line-through;
-  text-decoration-thickness: 2px;
-}
 .thanks {
-  margin-top: 24px;
+  margin-top: 22px;
   font-size: 34px;
   font-weight: 800;
 }
